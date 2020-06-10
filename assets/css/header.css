@@ -1,0 +1,43 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Nunito', sans-serif;
+	background-color: rgb(255, 252, 226);
+	/* height: 100vh; */
+}
+
+/* acá empieza el menú */
+.header {
+	display: flex;
+	align-items: center;
+	padding: 10px 20px;
+	box-shadow: 0 2px 8px rgb(211, 211, 211);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 100;
+}
+.nav {
+	width: 100%;
+	display: flex;
+	justify-content: flex-end;
+}
+.contMenu {
+	display: flex;
+}
+.logo {
+	width: 120px;
+}
+.itemMenu {
+	list-style: none;
+	margin: 0 20px;
+}
+.linkMenu {
+	text-decoration: none;
+	color: rgb(97, 7, 7);
+	border-bottom: 1px solid rgb(121, 48, 48);
+}

@@ -1,0 +1,120 @@
+/* acá empieza el main */
+.main {
+	max-width: 1100px;
+	margin: auto;
+	padding-top: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.section {
+	width: 78%;
+}
+.title {
+	width: 50%;
+	margin: auto;
+}
+.title img {
+	width: 100%;
+}
+.contenedor {
+	display: flex;
+	margin-bottom: 100px;
+	justify-content: space-between;
+	align-items: center;
+}
+.contenedor > p,
+.contenedor div {
+	width: 48%;
+}
+.contenedor img {
+	width: 50%;
+}
+.sub {
+	text-align: right;
+	margin-bottom: 20px;
+	padding-right: 40px;
+}
+.txt2 {
+	text-align: right;
+}
+
+/* Acá empieza el aside */
+.aside {
+	width: 20%;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: rgb(174, 107, 107);
+	position: sticky;
+	top: 50px;
+	height: 700px;
+	margin-bottom: 40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.publicidad {
+	margin-bottom: 30px;
+}
+.picPublicidad {
+	width: 80%;
+	display: block;
+	margin: auto;
+}
+
+/* Acá empiezan las media queries */
+@media screen and (max-width: 768px) {
+	.main {
+		flex-direction: column;
+		padding: 0 40px;
+	}
+	.section,
+	.aside {
+		width: 100%;
+	}
+	.section {
+		margin-top: 150px;
+	}
+	.aside {
+		flex-direction: row;
+		height: auto;
+		align-items: center;
+	}
+	.publicidad {
+		width: 31%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.aside {
+		display: none;
+	}
+	.contenedor {
+		flex-direction: column;
+	}
+	.contenedor > p,
+	.contenedor div,
+	.contenedor img {
+		width: 100%;
+	}
+	.section {
+		margin-top: 80px;
+	}
+	.contenedor img {
+		margin-bottom: 20px;
+	}
+	.contBottom div {
+		order: 2;
+	}
+	.contenedor p {
+		text-align: center;
+	}
+	.sub {
+		text-align: center;
+		padding-right: 0;
+	}
+	.footer {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+}
